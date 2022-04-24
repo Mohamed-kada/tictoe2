@@ -10,6 +10,11 @@ app.get("/zeineb", (req,res)=>{           // "/zeineb" est le reste de l'adresse
    //res.send("hello zeineb") 
  })
 
+app.get("/mohamed", (req,res)=>{           // "/zeineb" est le reste de l'adresse http://localhost:3001(port)/zeineb(adresse)
+   res.sendFile(__dirname + "/public/mohamed.html")  //home.html est le code html de l'application
+   //res.send("hello zeineb") 
+ })
+
  server.listen(port,()=>{
     console.log("server running ")
 })
