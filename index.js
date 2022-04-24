@@ -6,7 +6,7 @@ app.use(express.static(__dirname +"/public"))
 const server= require('http').createServer(app) /*creation lien http*/
 
 app.get("/zeineb", (req,res)=>{           // "/zeineb" est le reste de l'adresse http://localhost:3001(port)/zeineb(adresse)
-   res.sendFile(__dirname + "/public/home.html")  //home.html est le code html de l'application
+   res.sendFile(__dirname + "/public/index.html")  //home.html est le code html de l'application
    //res.send("hello zeineb") 
  })
 
